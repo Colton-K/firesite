@@ -14,46 +14,101 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/resume.css" rel="stylesheet" />
     </head>
     <body class="bg-light padded">
         <!-- Navigation-->
-        <header class="card-header">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+        <!-- <header class="card-header bg-dark"> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="mainNav">
                 <div class="container px-4 px-lg-5">
-                    <a class="navbar-brand" href="index.html">Colton Kammes</a>
+                    <a class="navbar-brand m-0 p-0" href="index.html">Colton<span class="text-info">Kammes</span></a>
                     <!-- <a class="navbar-brand" href="index.html">Home</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-info" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </header>
+        <!-- </header> -->
         
         <!-- Content -->
         <main class="container text-center">
-            <h1 class="text-center">About</h1>   
-            <div class="container border-2">
-                <p>
-                    I currently am a rising junior Computer Engineering student at the University of Notre Dame. I love making useful gadgets to accomplish my tasks! Outside of programming, I play the trombone. I am a member of the Notre Dame Marching Band, Hockey Band, Symphonic Winds, Band Ambassadors, and Trombone Choir.
-                </p>
-                <p>
-                    Through my personal projects, I have played around with dozens of Raspberry Pis, Arduinos, and I also have a virtualized homelab running my servers now. I partcipate in hackathons and have learned a lot of my practical skills independently. I use linux and am incredibly familiar with Bash. I primarily program in Python and C++, but I have worked with C, JavaScript, HTML, Java, and used Verilog HDL for FPGA development.
-                </p>
+            <div class="container m-4">
+                <h2 class="text-center border-bottom">About</h2>   
+                <div class="container">
+                    <p class="text-start">
+                        I am a rising junior Computer Engineering student at the University of Notre Dame. I love making useful gadgets to accomplish my tasks! Outside of programming, I play the trombone. I am a member of the Notre Dame Marching Band, Hockey Band, Symphonic Winds, Band Ambassadors, and Trombone Choir.
+                    </p>
+                    <p class="text-start">
+                        Through my personal projects, I have played around with dozens of Raspberry Pis, Arduinos, and I also have a virtualized homelab running my servers now. I partcipate in hackathons and have learned a lot of my practical skills independently. I use linux and am incredibly familiar with Bash. I primarily program in Python and C++, but I have worked with C, JavaScript, HTML, Java, and used Verilog HDL for FPGA development.
+                    </p>
+                </div>
             </div>
-            <h2 class="text-center">Education</h2>
-            <ul>
-                <p>University of Notre Dame</p>
-                <p>DeKalb High School</p>
-            </ul>
+            <div class="container m-4 text-start">
+                <h2 class="text-center border-bottom">Experience</h2>
+
+                <section id="resume" class="resume">
+                    <div class="container center-block">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-7">
+                                <div class="resume-item">
+                                    <h4>Aware REU</h4>
+                                    <h5>Summer 2021</h5>
+                                    <p class="m-0 p-0"><em>Notre Dame, IN</em></p>
+                                    <ul>
+                                        <li>Used machine learning to analyze wireless leakage typically classified as noise</li>
+                                        <li>Wrote weekly progress reports for the NSF and research lab meetings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="container m-4">
+                <h2 class="text-center m-4 border-bottom">Education</h2>
+                <div class="container">
+                    <div class="row text-start">
+                        <div class="col-4">
+                            <img src="assets/img/20191019_1424282.jpg" alt="Notre Dame Campus" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <h3>University of Notre Dame</h3>
+                            <p>Class of 2023</p>
+                            <ul>
+                                <li>Computer Engineering</li>
+                                <li>Band of the Fighting Irish</li>
+                                <li>Carroll Hall</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row text-start">
+                        <div class="col-4">
+                            <img src="assets/img/dhs.png" alt="DeKalb high school" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <h3>DeKalb High School</h3>
+                            <p>Class of 2019</p>
+                            <ul>
+                                <li>FIRST Robotics Team 5934 Lead Programmer and Drive Team</li>
+                                <li>Trombone Section Leader (2016-2019)</li>
+                                <li>District #428 Tech Specialist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Footer-->
         <footer class="border-top">

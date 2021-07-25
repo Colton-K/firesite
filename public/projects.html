@@ -15,41 +15,114 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body class="bg-light padded">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Colton Kammes</a>
-                <!-- <a class="navbar-brand" href="index.html">Home</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
-                    </ul>
+        <!-- <header class="card-header bg-dark"> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="mainNav">
+                <div class="container px-4 px-lg-5">
+                    <a class="navbar-brand m-0 p-0" href="index.html">Colton<span class="text-info">Kammes</span></a>
+                    <!-- <a class="navbar-brand" href="index.html">Home</a> -->
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-info" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        <!-- </header> -->
+        
+        <!-- Content -->
+        <main class="container-fluid text-start">
 
-        <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Colton Kammes</h1>
-                            <span class="subheading">Computer Engineering Student at the University of Notre Dame</span>
+            <!-- <div class="p-5 mb-4 bg-light rounded-3"> -->
+            <!--     <div class="container-fluid py-5"> -->
+            <!--     <h1 class="display-5 fw-bold">Custom jumbotron</h1> -->
+            <!--     <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p> -->
+            <!--     <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+            <!--     </div> -->
+            <!-- </div> -->
+
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">My Projects</h2>
+
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <!-- <a href="projects/webserver.html"> -->
+                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/thinkhub1.png');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Home IOT Server</h2>
+                                <!-- <p class="m-0 p-0">Used to control light switches, lamps, fans, RGB Strips, and the TV</p> -->
+                                <span class="subheading">Used to control light switches, lamps, fans, RGB Strips, and the TV</span>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/tvLights1.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TV Background Lights</h2>
+                            <!-- <p class="m-0 p-0"></p> -->
+                            <span class="subheading">Emits light to soften the transition between the TV and its surroundings</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/robot1.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Autonomous Robot</h2>
+                            <p class="m-0 p-0"></p>
+                            <span class="subheading">Used to play around with computer vision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/dotfiles1.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Dotfiles</h2>
+                            <!-- <p class="m-0 p-0"></p> -->
+                            <span class="subheading">Portable setup which can be used when installing new operating systems and virtual machines</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/weatherDisplay1.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-light text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Weather Display</h2>
+                            <!-- <p class="m-0 p-0"></p> -->
+                            <span class="subheading">Shows the forecast so I am always prepared</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/hesburghhackathon.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hesburgh Hackathon 2021</h2>
+                            <!-- <p class="m-0 p-0"></p> -->
+                            <span class="subheading">Created a website to bring people together over food. Won 2nd place overall</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-3 shadow-lg" style="background-image: url('assets/img/openmpi1.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cisco Preternship Project</h2>
+                            <!-- <p class="m-0 p-0"></p> -->
+                            <span class="subheading">Converted old nroff formatted documentation to markdown</span>
+                        </div>
+                    </div>
+                </div>
 
+                </div>
+            </div>
+
+        </main>
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
@@ -57,23 +130,15 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="https://www.linkedin.com/in/colton-kammes-8594a4172/">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="http://www.github.com/Colton-K">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -95,4 +160,3 @@
     
     
 </html>
-

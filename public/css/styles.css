@@ -7076,7 +7076,8 @@ textarea.form-control-lg {
 }
 
 .text-info {
-  color: #0dcaf0 !important;
+  /* color: #0dcaf0 !important; */
+  color: #CBA72D !important;
 }
 
 .text-warning {
