@@ -4216,6 +4216,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  transition: all .2s ease-in-out;
 }
 .card > hr {
   margin-right: 0;
@@ -4234,6 +4235,10 @@ textarea.form-control-lg {
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
   border-top: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-body {

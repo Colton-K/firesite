@@ -1,0 +1,47 @@
+.colorcard
+{
+  padding:10px;
+  /* border:0px; */
+  color:#fff;
+  /* font-family: 'BenchNine', Arial, sans-serif; */
+  /* font-size:20px; */
+  /* margin:10px 40px; */
+  position:relative;
+  /* text-transform:uppercase; */
+}
+.colorcard:before,
+.colorcard:after {
+  border-color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.colorcard:before {
+  border-left-width: 4px;
+  border-top-width: 4px;
+  left: -6px;
+  top: -6px;
+}
+
+.colorcard:after {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  bottom: -6px;
+  right: -6px;
+  color: gold;
+}
+.colorcard:hover:before,
+.colorcard:hover:after
+{
+  height:100%;
+  width:100%;
+}
+
+.colorcard:hover {
+    color: #CBA72D;
+}
