@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    ports: 
+      - 80:80
+    volumes:
+      - /home/colton/work/firebaseWebsite/public:/usr/share/nginx/html
